@@ -142,6 +142,15 @@ header nav ul li{
     background-color: #090809;
     
 }
+.link {
+    transition: color 0.3s ease-in-out;
+}
+.link{
+    color: white;
+}
+.link:hover {
+    color: #ff6e0d;
+}
 
 /*fotos*/
 .fondo2{
@@ -194,17 +203,13 @@ header nav ul li{
 .acomodar_redes{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 .mapa{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 0px;
-}
-.stretch{
-    justify-items: stretch;
-    align-content: stretch;
 }
 .container {
     position: relative;
@@ -231,12 +236,6 @@ header nav ul li{
     color: #ff6e0d;
     font-weight: bold;
 }
-.flex-galeria{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-}
 .grid-clases{
     width: 1230px;
     height: 910px;
@@ -247,7 +246,6 @@ header nav ul li{
     grid-row-gap: 10px;
     margin: 20px 20px 30px 20px;
 }
-
 .tamaño-container{
     height: 450px;
     width: 300px;
@@ -285,7 +283,7 @@ header nav ul li{
     color: #e8e9eb;
     text-align: justify;
     vertical-align: baseline;
-    padding: 50px;
+    padding: 0;
 }
 .letra-titulos{
     font-family: 'Passion One';
@@ -293,7 +291,16 @@ header nav ul li{
     font-size: 20px;
     font-weight: 500;
 }
-
+.zoom{ 
+    width: 300px; 
+    height: 450px; 
+    padding: 50px; 
+    margin: 0 auto;  
+    transition: transform .2s;
+}
+.zoom:hover{
+    transform: scale(1.2);
+}
 /* ----- Nosotros ----- */
 .texto_nosotros{
     font-size: 20px;
