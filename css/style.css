@@ -211,7 +211,7 @@ header nav ul li{
     justify-content: flex-end;
     margin-top: 0px;
 }
-.container {
+.cont{
     position: relative;
     text-align: justify;
     color: rgb(255, 251, 251);
@@ -434,4 +434,50 @@ header nav ul li{
     .grilla-servicios section{
         display: none;
     }
+}
+ /* --- Planes ---  */
+.flex-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.texto_planes{
+    font-size: 20px;
+    font-family: "Poppins";
+    color: black;
+    font-weight: 600;
+    text-align: justify;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+.fondo6{
+    background-image: url(../img/planes.jpg);
+    background-repeat: no-repeat;
+}
+.letra-planes{
+    font-family: 'Passion One';
+    color: white;
+    font-size: 70px;
+    font-weight: 500;
+}
+.margen-acordion{
+    margin: 10px 10px 30px 10px;
+}
+.naranja{
+    color: #ff6e0d;
+}
+.margin{
+    margin: 0 0 0 0;
+    padding: 0;
+}
+.padding-cero{
+    padding: 0;
+}  
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.row1{
+    background-color: #040404;
 }
