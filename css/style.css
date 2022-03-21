@@ -19,7 +19,9 @@ a:link, a:visited,  a:hover, a:active
     color: #ff6e0d;
 }
 .font1{
-    font-family:"Montserrat";
+    font-family:"Poppins";
+    font-size: 17px;
+    font-weight: 600;
 }
 body{
     overflow-x: hidden;
@@ -226,7 +228,33 @@ header nav ul li{
     bottom: 8px;
     left: 16px;
 }
- 
+@media screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px){
+    .grilla{
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6";
+    }   
+    .grilla section{
+        display: none;
+    } 
+    .box6{
+        background-color: #e8e9eb;
+    }
+    .margen{
+        margin: 10px;
+    }
+}
 /* fin index */
 
 /* ----- Clases ----- */
@@ -350,14 +378,6 @@ header nav ul li{
     flex-direction: row;
     justify-content: space-around;
 }
-/*.grid-servicios{
-    display: grid;
-    grid-template-columns: 300px 300px;
-    grid-auto-rows: 1fr 1fr;
-    grid-column-gap: 70px;
-    grid-row-gap: 30px;
-    margin: 50px 0 50px 0;
-}*/
 .flex-servicios{
     display: flex;
     flex-direction: row;
@@ -366,14 +386,17 @@ header nav ul li{
 .margiin{
     margin-left: 200px;
 }
+.otro-margen{
+    margin-left: 130px;
+    margin-bottom: 20px;
+}
 
 .grilla-servicios{
     display: grid; 
     width: 100vw;
     height: 100vh;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(6,1fr);
-    gap: 10px 0px; 
+    grid-template-rows: repeat(6,1fr); 
     grid-template-areas: 
     "header header header header"
     "titulo . . ."
@@ -381,7 +404,6 @@ header nav ul li{
     ". sauna fisio ."
     ". boton . ."
     "footer footer footer mapa";
-
 }
 .caja1{
     grid-area: header;
@@ -410,17 +432,15 @@ header nav ul li{
 .caja9{
     grid-area: mapa;
 }
-@media (max-width: 575.98px){
-    body{
-        overflow-x: hidden;
-    }
+@media screen 
+    and (min-device-width: 375px) 
+    and (max-device-width: 812px){
     .grilla-servicios{
         display: grid; 
         width: 100vw;
         height: 100vh;
         grid-template-columns: 1fr; 
-        grid-template-rows: repeat(8, 1fr); 
-        gap: 10px 0px; 
+        grid-template-rows: repeat(8, 1fr);  
         grid-template-areas: 
         "header"
         "titulo"
@@ -433,6 +453,28 @@ header nav ul li{
     }
     .grilla-servicios section{
         display: none;
+    }
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    .grilla-servicios{
+        display: grid; 
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(6,1fr);
+        gap: 10px 0px; 
+        grid-template-areas: 
+        "header header header header"
+        "titulo . . ."
+        ". nutri spa ."
+        ". sauna fisio ."
+        ". boton . ."
+        "footer footer footer mapa";
+    
     }
 }
  /* --- Planes ---  */
