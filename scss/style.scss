@@ -1,0 +1,76 @@
+@import "colores";
+@import "footer";
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header nav {
+    background-color: $negro;
+    height: 103px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+        }
+            ul li{
+                margin: 0 15px 0 0;
+                color: $naranja;
+                font-family: "Poppins";
+                font-size: 17px;
+                font-weight: 600;
+            }
+}
+a{
+    text-decoration: none;
+        &:hover, &:visited, &:active, &:link{
+            text-decoration: none;
+            color: inherit;
+    }
+}
+main{
+    background-image: url(../img/gym14.jpg);
+    background-repeat: no-repeat;
+    height: 350px;
+        div h1{
+            font-family: "Poppins";
+            font-size: 20px;
+            color: $naranja;
+            text-align: justify;
+        }
+            div h2{
+                font-family: "Poppins";
+                font-size: 17px;
+                color: white;
+                text-align: justify;
+            }
+                div p{
+                    font-family: "Poppins";
+                    font-size: 17px;
+                    color: black;
+                    text-align: justify; 
+                }
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-family: "Montserrat";
+            padding:15px 20px 15px 20px;
+            border-color: #090809;
+            border-width: 3px;
+            border-style: solid;
+            border-radius: 10px;
+            background-color: #090809;
+        }
+}

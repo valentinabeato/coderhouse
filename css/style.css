@@ -1,3 +1,125 @@
+footer {
+  background-color: #e8e9eb;
+  position: relative;
+  text-align: justify;
+}
+footer div h4 {
+  font-family: "Poppins";
+  font-size: 20px;
+  color: #010506;
+  text-indent: 1px;
+  margin-left: 10px;
+  text-align: left;
+  line-height: 40px;
+}
+footer div p {
+  font-family: "Poppins";
+  font-size: 20px;
+  color: #010506;
+  text-indent: 1px;
+  margin-left: 10px;
+  text-align: left;
+  line-height: 40px;
+}
+footer article {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+footer article ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+footer article ul li img {
+  width: 30px;
+  height: 30px;
+}
+footer span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 0px;
+}
 
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header nav {
+  background-color: #010506;
+  height: 103px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+header nav ul li {
+  margin: 0 15px 0 0;
+  color: #ff6e0d;
+  font-family: "Poppins";
+  font-size: 17px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover, a:visited, a:active, a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  background-image: url(../img/gym14.jpg);
+  background-repeat: no-repeat;
+  height: 350px;
+}
+main div h1 {
+  font-family: "Poppins";
+  font-size: 20px;
+  color: #ff6e0d;
+  text-align: justify;
+}
+main div h2 {
+  font-family: "Poppins";
+  font-size: 17px;
+  color: white;
+  text-align: justify;
+}
+main div p {
+  font-family: "Poppins";
+  font-size: 17px;
+  color: black;
+  text-align: justify;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-family: "Montserrat";
+  padding: 15px 20px 15px 20px;
+  border-color: #090809;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #090809;
+}
 
 /*# sourceMappingURL=style.css.map */
