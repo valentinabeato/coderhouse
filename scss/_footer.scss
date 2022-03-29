@@ -1,25 +1,35 @@
 @import "colores";
+
+$font: (
+  family: "Poppins",
+  size: 20px,
+  text-indent: 1px,
+  margin-left: 10px,
+  text-align: left,
+  line-height: 40px
+);
+
 footer{
     background-color: $gris;
     position: relative;
     text-align: justify;
         div h4{
-            font-family: "Poppins";
-            font-size: 20px;
+            font-family: map-get($font, family);
+            font-size: map-get($font, size);
             color: $negro;
-            text-indent: 1px;
-            margin-left: 10px;
-            text-align: left;
-            line-height: 40px; 
+            text-indent: map-get($font, text-indent);
+            margin-left: map-get($font, margin-left);
+            text-align: map-get($font, text-align);
+            line-height: map-get($font, line-height); 
         }
             div p{
-                font-family: "Poppins";
-                font-size: 20px;
+                font-family: map-get($font, family);
+                font-size: map-get($font, size);
                 color: $negro;
-                text-indent: 1px;
-                margin-left: 10px;
-                text-align: left;
-                line-height: 40px; 
+                text-indent: map-get($font, text-indent);
+                margin-left: map-get($font, margin-left);
+                text-align: map-get($font, text-align);
+                line-height: map-get($font, line-height); 
             }
                 article{
                     position: absolute;

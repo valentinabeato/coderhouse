@@ -1,5 +1,13 @@
 @import "colores";
 @import "footer";
+
+@mixin flex-navbar{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+
 body{
     box-sizing: border-box;
     margin: 0;
@@ -13,9 +21,7 @@ header nav {
     align-items: center;
     margin-bottom: 0;
         ul{
-            display: flex;
-            flex-direction: row;
-            list-style-type: none;
+            @include flex-navbar;
         }
             ul li{
                 margin: 0 15px 0 0;

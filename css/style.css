@@ -58,9 +58,9 @@ header nav {
   margin-bottom: 0;
 }
 header nav ul {
+  list-style-type: none;
   display: flex;
   flex-direction: row;
-  list-style-type: none;
 }
 header nav ul li {
   margin: 0 15px 0 0;
